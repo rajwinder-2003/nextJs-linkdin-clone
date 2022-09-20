@@ -4,7 +4,7 @@ import React from 'react'
 export const LeftSidebar = () => {
   return (
     <>
-    <div className='ml-[6rem] py-5'>
+    <div className='py-5'>
         <div className='w-[14rem] border rounded-lg bg-white'>
             <div className='bg-[#a0b4b7] h-[3.5rem] rounded-t-lg'></div>
             <button className='hover:underline decoration-blue-600'>
@@ -56,7 +56,7 @@ export const LeftSidebar = () => {
 
         {/* seconde div fixed */}
 
-        <div className='w-[14rem] border rounded-lg bg-white mt-2'>
+        <div className='w-[14rem] border rounded-lg bg-white mt-2 sticky top-6'>
                 <div className='my-3'>
                     <ul className='px-4 pt-1 space-y-4'>
                         <li className='text-xs font-medium text-blue-700 hover:underline hover:cursor-pointer'>Groups</li>

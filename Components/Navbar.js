@@ -8,6 +8,22 @@ const Navbar = () => {
 
     const [searchValue, setSearchValue] = useState("")
 
+    const handelFirst = () => {
+        setSearchValue("#hiring")
+    }
+
+    const handelSecond = () => {
+        setSearchValue("#jobadvice")
+    }
+
+    const handelThird = () => {
+        setSearchValue("covid-19")
+    }
+
+    const handelFourth = () => {
+        setSearchValue("great resignation")
+    }
+
     const [showProfile, setShowProfile] = useState(false)
 
     const [showSidewar, setShowSidewar] = useState(false)
@@ -19,7 +35,7 @@ const Navbar = () => {
                <img className='h-9' src="linkedin.png" alt="" />
                <div onClick={() => setSearch(!search)} className={search ? "bg-[#eef3f8] flex h-9 border-black border-2 rounded-[0.300rem]" : "bg-[#eef3f8] flex h-9"}>
                <span className=''><img className='h-3 mt-3 ml-4' src="search.png" alt="" /></span>
-               <input value={searchValue} className={search ? "outline-none bg-[#eef3f8] text-sm font-light  h-8 ml-2 w-[20rem] rounded-md" : "outline-none bg-[#eef3f8] text-sm font-light  h-8 ml-2 w-52 rounded-md"} onChange={(e)=>setsetSearchValue(e.target.value)} type="search" placeholder='Search' />
+               <input value={searchValue} className={search ? "outline-none bg-[#eef3f8] text-sm font-light  h-8 ml-2 w-[20rem] rounded-md" : "outline-none bg-[#eef3f8] text-sm font-light  h-8 ml-2 w-52 rounded-md"} onChange={(e)=>setSearchValue(e.target.value)} type="search" placeholder='Search' />
                </div>
             </div>
             <div className='flex'>
@@ -63,10 +79,10 @@ const Navbar = () => {
             <div className={search ? "mx-[10rem] bg-white w-[25.5rem] rounded-md absolute" : "hidden"}>
                 <h1 className='px-3 pt-3'>Try searching for</h1>
                 <ul className='space-y-1 mt-5 pb-5'>
-                    <li className='flex px-3 hover:bg-[#ebebeb] py-3 hover:cursor-pointer'><span><img className='h-4 mt-1 mr-5' src="search.png" alt="" /></span>#hiring</li>
-                    <li className='flex px-3 hover:bg-[#ebebeb] py-3 hover:cursor-pointer'><span><img className='h-4 mt-1 mr-5' src="search.png" alt="" /></span>#jobadvice</li>
-                    <li className='flex px-3 hover:bg-[#ebebeb] py-3 hover:cursor-pointer'><span><img className='h-4 mt-1 mr-5' src="search.png" alt="" /></span>covid-19</li>
-                    <li className='flex px-3 hover:bg-[#ebebeb] py-3 hover:cursor-pointer'><span><img className='h-4 mt-1 mr-5' src="search.png" alt="" /></span>great resignation</li>
+                    <li onClick={handelFirst} className='flex px-3 hover:bg-[#ebebeb] py-3 hover:cursor-pointer'><span><img className='h-4 mt-1 mr-5' src="search.png" alt="" /></span>#hiring</li>
+                    <li onClick={handelSecond} className='flex px-3 hover:bg-[#ebebeb] py-3 hover:cursor-pointer'><span><img className='h-4 mt-1 mr-5' src="search.png" alt="" /></span>#jobadvice</li>
+                    <li onClick={handelThird} className='flex px-3 hover:bg-[#ebebeb] py-3 hover:cursor-pointer'><span><img className='h-4 mt-1 mr-5' src="search.png" alt="" /></span>covid-19</li>
+                    <li onClick={handelFourth} className='flex px-3 hover:bg-[#ebebeb] py-3 hover:cursor-pointer'><span><img className='h-4 mt-1 mr-5' src="search.png" alt="" /></span>great resignation</li>
                 </ul>
             </div>
 

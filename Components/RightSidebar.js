@@ -89,7 +89,7 @@ const RightSidebar = () => {
             </button>
           </div>
         </div>
-        <div className='bg-white border rounded-lg w-[22rem] mt-2'>
+        <div className='bg-white border rounded-lg w-[22rem] mt-2 sticky top-6'>
             <div className='flex justify-end mx-4 mt-2'>
               <h1 className='text-sm text-gray-600 mr-2'>Ad</h1>
               <button className=''>
@@ -114,7 +114,7 @@ const RightSidebar = () => {
               </div>
             </div>
         </div>
-        <div className='w-[22rem] mt-2'>
+        <div className='w-[22rem] mt-2 sticky top-[18rem]'>
           <div className='mx-[4rem] pt-5'>
               <div className='space-y-3'>
                 <ul className='flex space-x-4 justify-center'>

@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-[#f3f2ef] flex'>
+      <main className='bg-[#f3f2ef] flex px-14'>
         <LeftSidebar/>
         <Center/>
         <RightSidebar/>
